@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width" />
+<!--THERMOMETER-->
+<script src="RGraph.common.core.js"></script>
+<script src="RGraph.thermometer.js"></script>
+<script src="RGraph.gauge.js"></script>
+<script src="RGraph.common.dynamic.js"></script>
+<script src="RGraph.common.tooltips.js"></script>
+<script src="RGraph.drawing.text.js"></script>
+<script src="RGraph.line.js"></script>
+
+<!-- -->
+<!--BOOTSTRAP -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- -->
+<title>Room Plan</title>
+</head>
+<!-- PHP -->
+
+<!-- -->
+
+<body>
+    <div class="container-fluid">
+    
+        <div class="row">
+            <div id="box1" class="col-md-auto " style="background-color:white;">
+        <svg width="620" height="400" xmlns="http://www.w3.org/2000/svg">
+            <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+            <g>
+             <title>Outside</title>
+             <rect fill="#fff" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+             <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+              <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+             </g>
+            </g>
+            <g>
+             <title>Living Room</title>
+             
+             <rect id="svg_1" height="297" width="513" y="50" x="32.5" stroke-width="8" stroke="#000" fill="#fff"/>
+             <ellipse ry="22" rx="24" id="svg_2" cy="97" cx="74.5" stroke-width="1.5" stroke="#000" fill="#fff"/>
+             <path id="svg_4" d="m658.5,261c0,0 0,0 0,0c0,0 0,0 0,0c0,0 0,0 0,0c0,0 0,0 0,0c0,0 0,0 0,0z" stroke-linecap="undefined" stroke-linejoin="undefined" stroke-width="1.5" stroke="#000" fill="#fff"/>
+             <line stroke-linecap="null" stroke-linejoin="null" id="svg_5" y2="285" x2="238.5" y1="347" x1="166.5" fill-opacity="null" stroke-opacity="null" stroke-width="5" stroke="#000" fill="none"/>
+             <rect stroke-dasharray="2,2" id="svg_8" height="8" width="133" y="46" x="338.5" fill-opacity="null" stroke-opacity="null" stroke-width="8" stroke="#000" fill="#fff"/>
+             <path id="svg_9" d="m129.7825,32.965l19,-16l19,16l-19,16l-19,-16z" fill-opacity="null" stroke-opacity="null" stroke-width="8" stroke="#000" fill="#fff"/>
+             <path id="svg_10" d="m498,32l15,-15l15,15l-15,15l-15,-15z" fill-opacity="null" stroke-opacity="null" stroke-width="8" stroke="#000" fill="#fff"/>
+             <text font-weight="bold" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_11" y="13" x="82.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">Temperatuur sensor</text>
+             <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_12" y="13" x="470.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">Lichtsensor</text>
+             <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_13" y="69" x="44.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">LED Lamp</text>
+             <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_14" y="73" x="374.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">Gordijn</text>
+             <rect stroke-dasharray="5,5" id="svg_15" height="148" width="8" y="162" x="43.5" fill-opacity="null" stroke-opacity="null" stroke-width="8" stroke="#000" fill="#fff"/>
+             <text transform="rotate(-89 71.05468749999999,230.5) " font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_17" y="236" x="25.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">Verwarming</text>
+             <rect stroke="#000" id="svg_18" height="10.95215" width="130" y="321.85822" x="376.35534" fill-opacity="null" stroke-opacity="null" stroke-width="8" fill="#fff"/>
+             <rect stroke="#000" id="svg_19" height="63" width="185" y="116" x="345.5" fill-opacity="null" stroke-opacity="null" stroke-width="8" fill="#fff"/>
+             <rect stroke="#000" id="svg_20" height="62" width="59" y="116" x="277.5" fill-opacity="null" stroke-opacity="null" stroke-width="8" fill="#fff"/>
+             <rect stroke="#000" id="svg_21" height="66" width="59" y="187" x="278.5" fill-opacity="null" stroke-opacity="null" stroke-width="8" fill="#fff"/>
+             <rect stroke="#000" id="svg_22" height="19" width="160" y="118" x="358.5" fill-opacity="null" stroke-opacity="null" stroke-width="8" fill="#fff"/>
+             <rect stroke="#000" id="svg_23" height="47" width="15" y="196" x="280.5" fill-opacity="null" stroke-opacity="null" stroke-width="8" fill="#fff"/>
+             <ellipse ry="21.5" rx="66" id="svg_29" cy="221.5" cx="435.5" fill-opacity="null" stroke-opacity="null" stroke-width="8" stroke="#000" fill="#fff"/>
+          
+            </g>
+           </svg>  
+        </div>
+            <!-- Thermometer Canvas -->
+         <!--<div id="box2" class="col col-lg-2" style="background-color:white;"></div>-->
+         <div id="canvasDiv" style="margin-left: 50px; display: inline-block" class="canvasHide"></div>
+         <canvas id="cvs" width="350" height="350">
+                [No canvas support]
+            </canvas>
+            </div>
+           
+           
+           <!-- </div>-->
+        </div>
+        </div>
+             <!-- Thermometer Canvas -->
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!--script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+    <!-- CSS -->
+<style>
+
+.on {
+  fill: rgb(45, 207, 59);
+  stroke: red;
+  stroke-width: 2;
+}
+.off{
+    fill: rgb(211, 9, 9);
+}
+.up{
+    fill: blue;
+    stroke:green;
+}
+.canvasHide{
+    visibility:hidden;
+}
+</style> 
+<!--SCRIPT -->
+<script>
+//jQuery
+//LEDLAMP
+var LEDLamp = $("#svg_2");
+
+LEDLamp.on('click',function() { 
+    if($(this).attr('data-click-state')==1)  {
+        $(this).attr('data-click-state',0);
+        LEDLamp.removeClass("off");
+        $(this).addClass("on");
+        $("#svg_13").text("LEDLamp ON")
+        console.log("#LEDLamp clicked")
+	$.ajax({url:"LedON.php"})
+    }
+    else{
+        $(this).attr('data-click-state',1);
+        LEDLamp.removeClass("on");
+        $(this).addClass("off");
+        $("#svg_13").text("LEDLamp OFF")
+        console.log("#LEDLamp clicked")
+	$.ajax({url:"LedOFF.php"})       
+    } 
+});
+//
+//GORDIJN
+var Gordijn = $("#svg_8");
+
+Gordijn.on('click',function() { 
+    if($(this).attr('data-click-state')==1)  {
+        $(this).attr('data-click-state',0);
+       $(this).addClass("up");
+       $("#svg_14").text("Gordijn UP")
+       console.log("#gordijn clicked");
+    }
+    else{
+        $(this).attr('data-click-state',1);
+        $(this).removeClass("up");
+        $("#svg_14").text("Gordijn DOWN")
+        console.log("#gordijn clicked");
+        
+    } 
+});
+//
+//Verwarming
+var Verwarming = $("#svg_15");
+
+Verwarming.on('click',function() { 
+    if($(this).attr('data-click-state')==1)  {
+        $(this).attr('data-click-state',0);
+       $(this).addClass("up");
+       $("#svg_17").text("Verwarming ON")
+       console.log("#verwarming clicked");
+    }
+    else{
+        $(this).attr('data-click-state',1);
+        $(this).removeClass("up");
+        $("#svg_17").text("Verwarming OFF")
+        console.log("#verwarming clicked");
+        
+    } 
+});
+//
+//Temperatuur Sensor
+var TempSensor = $("#svg_9");
+var TermoCanvas = $("#cvs");
+var thermometer;
+
+TempSensor.on('click',function() { 
+    if($(this).attr('data-click-state')==1)  {
+        $(this).attr('data-click-state',0);
+       $(this).addClass("up");
+       $("#svg_11").text("Hide outside temperature")
+       //$(TermoCanvas).addClass("canvasHide");
+       $(TermoCanvas).hide();
+       console.log("#tempeature clicked");
+    }
+    else{
+        $(this).attr('data-click-state',1);
+        $(this).removeClass("up");
+        $("#svg_11").text("Show outside temperature");
+       // $(TermoCanvas).removeClass("canvasHide");
+        $(TermoCanvas).show();
+        console.log("#tempeature clicked");
+        
+    } 
+});
+//
+//Lichtsensor
+var LichtSensor = $("#svg_10");
+
+LichtSensor.on('click',function() { 
+    if($(this).attr('data-click-state')==1)  {
+        $(this).attr('data-click-state',0);
+       $(this).addClass("up");
+       $("#svg_12").text("Lichtsensor ON")
+       console.log("#LightSensor clicked");
+       
+    }
+    else{
+        $(this).attr('data-click-state',1);
+        $(this).removeClass("up");
+        $("#svg_12").text("Lichtsensor OFF")
+        console.log("#LightSensor clicked");
+        
+    } 
+});
+//THERMOMETRE SCRIPT
+
+     
+      //NEW THERMO
+      var gauge;
+function draw_thermometer(value){
+    if(typeof(gauge)=='undefined'){
+        gauge = new RGraph.Gauge({
+        id: 'cvs',
+        min: 0,
+        max: 50,
+        value: value,
+        options: {
+            valueTextUnitsPost: 'mm',
+            tickmarksSmal: 50,
+            tickmarksMedium: 5,
+            tickmarksBig: 5,
+            labelsCount: 10,
+            colorsRanges: [
+                [0,10,'blue'],
+                [10,17,'yellow'],
+                [17,25, 'orange'],
+                [25,30, 'green'],
+                [30,50,'red']
+            ]
+        }
+    }).draw();
+    }
+    else{
+        gauge.value=value;
+        gauge.grow();
+    }
+ 
+}
+function update_thermometer() {
+            $.get( "dht11_les.php", function( data ) {
+            draw_thermometer(JSON.parse(data).temperature); }
+            );
+            window.setTimeout(update_thermometer, 2000);
+        }
+      //
+
+        $(window).on("load", function (){ 
+            update_thermometer() ;
+           
+          });
+//
+//
+
+//        
+</script>
+<!-- -->
+</body>
+</html>
